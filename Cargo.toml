@@ -1,0 +1,19 @@
+[package]
+name = "smart_garden"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sysfs_gpio = "0.6"
+tokio = { version = "1", features = ["full"] }
+dotenv = "0.15.0"
+teloxide = { version = "0.9", features = ["macros", "auto-send"] }
+teloxide-core = "0.6"
+ctrlc = { version = "3.0", features = ["termination"] }
+job_scheduler = "*"
+crossbeam-channel = "0.5"
+lazy_static = "1.4.0"
+futures = "0.3"
+rand = "0.8.5"
